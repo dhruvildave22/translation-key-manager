@@ -1,4 +1,4 @@
-# Translation Key Manager — Technical Design Document
+# Translation Key Manager - Technical Design Document
 
 **Goal:** Build a VS Code extension that surfaces i18n translation-key issues (unused, missing, duplicate) inline in the editor without any manual commands.
 
