@@ -1,7 +1,5 @@
 # Translation Key Manager — Technical Design Document
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
-
 **Goal:** Build a VS Code extension that surfaces i18n translation-key issues (unused, missing, duplicate) inline in the editor without any manual commands.
 
 **Architecture:** A parser engine flattens locale JSON files and scans source files with regex to build an in-memory key index. That index feeds four output layers: DiagnosticCollection (red squiggles + Problems panel), TextEditorDecorations (faded unused keys), HoverProvider (tooltip), DefinitionProvider (Ctrl+Click), and a sidebar TreeView panel. A FileSystemWatcher triggers re-indexing on every save.
